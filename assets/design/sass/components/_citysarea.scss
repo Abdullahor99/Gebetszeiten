@@ -1,0 +1,40 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.stadt_infos_cont {
+  margin-left: 1rem;
+  .stadt_name {
+    font-size: 8rem;
+    margin: 0;
+    color: $grey-color;
+    text-shadow: 0 0 1px black;
+  }
+  .flex-cont {
+    display: flex;
+    gap: 1rem;
+  }
+  .aktulle_datum {
+    color: $green-color;
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+  .aktulle_uhrzeit {
+    color: $grey-color;
+    text-shadow: 0 0 1px black;
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+}
+
+.gebete_zeiten_cont {
+  display: flex;
+  justify-content: space-around;
+  .gebet_zeit {
+    background-color: $green-color;
+    width: 10%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: $white-color;
+  }
+}

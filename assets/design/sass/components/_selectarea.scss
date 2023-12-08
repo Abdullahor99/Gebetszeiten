@@ -1,0 +1,30 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.select_cont {
+  @include center-flex;
+  flex-direction: column;
+  .beschreibung_cont {
+    color: $grey-color;
+    text-shadow: 0 0 1px black;
+  }
+
+  #citys {
+    width: 40rem;
+    min-width: 30rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid $green-color;
+    background-color: $white-color;
+    color: $green-color-2;
+    border-radius: 10px;
+  }
+
+  #citys:hover,
+  #citys:focus {
+    border-color: darken($green-color, 10%);
+    box-shadow: 0 0 5px lighten($green-color, 10%);
+  }
+}

@@ -1,0 +1,11 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.logo_cont {
+  @include center-flex;
+  background-color: $green-color;
+  justify-content: start;
+  padding-left: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
